@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 
-def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystorePropertiesFile = rootProject.file("key.properties")
 def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
@@ -8,11 +8,11 @@ android {
     compileSdkVersion = 31
 
     defaultConfig {
-        applicationId = "eu.faircode.netguard"
-        versionName = "2.303"
+        applicationId = "net.sapray.netguard"
+        versionName = "2.304"
         minSdkVersion 22
         targetSdkVersion 31
-        versionCode = 2022111001
+        versionCode = 22123002
         archivesBaseName = "NetGuard-v$versionName"
 
         externalNativeBuild {

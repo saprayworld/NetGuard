@@ -9,7 +9,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:targetClass="eu.faircode.netguard.ActivitySettings"
-            android:targetPackage="eu.faircode.netguard" />
+            android:targetPackage="net.sapray.netguard" />
         <categories android:name="android.shortcut.settings" />
     </shortcut>
     <shortcut

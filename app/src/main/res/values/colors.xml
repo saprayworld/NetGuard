@@ -38,8 +38,8 @@
     <color name="colorGreenOn">#8BC34A</color>
     <color name="colorGreenOff">#F44336</color>
 
-    <color name="colorSend">#FF0000</color>
-    <color name="colorReceive">#0000FF</color>
+    <color name="colorSend">#FF9800</color>
+    <color name="colorReceive">#2196F3</color>
 
     <color name="colorGrayed">#AAAAAA</color>
 </resources>

@@ -9,10 +9,10 @@ android {
 
     defaultConfig {
         applicationId = "net.sapray.netguard"
-        versionName = "2.305"
+        versionName = "2.307"
         minSdkVersion 22
         targetSdkVersion 31
-        versionCode = 22123102
+        versionCode = 23121601
         archivesBaseName = "NetGuard-v$versionName"
 
         externalNativeBuild {

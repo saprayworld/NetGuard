@@ -1223,7 +1223,7 @@ public class ActivityMain extends AppCompatActivity implements SharedPreferences
         });
 
         // Handle rate
-        btnRate.setVisibility(getIntentRate(this).resolveActivity(getPackageManager()) == null ? View.GONE : View.VISIBLE);
+        //btnRate.setVisibility(getIntentRate(this).resolveActivity(getPackageManager()) == null ? View.GONE : View.VISIBLE);
         btnRate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 
-def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystorePropertiesFile = rootProject.file("key.properties")
 def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
@@ -8,11 +8,11 @@ android {
     compileSdkVersion = 34
 
     defaultConfig {
-        applicationId = "eu.faircode.netguard"
-        versionName = "2.327"
+        applicationId = "net.sapray.netguard"
+        versionName = "2.307"
         minSdkVersion 22
         targetSdkVersion 34
-        versionCode = 2023120301
+        versionCode = 23121601
         archivesBaseName = "NetGuard-v$versionName"
 
         externalNativeBuild {
@@ -52,7 +52,8 @@ android {
             signingConfig signingConfigs.release
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/NetGuard/releases/latest\""
+            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
+//            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/NetGuard/releases/latest\""
         }
         play {
             minifyEnabled = true
@@ -67,7 +68,8 @@ android {
             proguardFiles.add(file('proguard-rules.pro'))
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/NetGuard/releases/latest\""
+            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
+            // buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/NetGuard/releases/latest\""
         }
     }
 
